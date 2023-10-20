@@ -1,0 +1,7 @@
+version: "3"
+services:
+  php:
+    # Override default docker-compose to mount workspace inside
+    volumes:
+      - ./:/workspace:cached
+      - ./src:/var/www/html:cached

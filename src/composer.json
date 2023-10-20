@@ -8,10 +8,10 @@
             "email": "ddixon@bingewave.com"
         }
     ],
-    "minimum-stability" : "dev",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "prodigyview/prodigyview": "^0.9.0",
-        "php-amqplib/php-amqplib": "v2.8.1"
+        "prodigyview/prodigyview": "1.0.01",
+        "php-amqplib/php-amqplib": "v3.5.4"
     }
 }

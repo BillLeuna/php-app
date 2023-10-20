@@ -1,0 +1,19 @@
+{
+  "name": "polytech",
+  "dockerComposeFile": [
+    "../docker-compose.yaml",
+    "docker-compose.yaml"
+  ],
+  "service": "php",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+  "postStartCommand": "cd /var/www/html && composer install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "DEVSENSE.phptools-vscode"
+      ]
+    }
+  }
+}

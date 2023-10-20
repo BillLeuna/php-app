@@ -1,0 +1,12 @@
+version: "3"
+services:
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:80
+  rabbitmq:
+    image: rabbitmq:3.12.4-management
+    ports:
+      - 15672:15672
