@@ -8,7 +8,7 @@
             "email": "ddixon@bingewave.com"
         }
     ],
-    "minimum-stability" : "dev",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
         "prodigyview/prodigyview": "^0.9.0",

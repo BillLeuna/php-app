@@ -1,5 +1,5 @@
 <?php
-include ('vendor/autoload.php');
+include('vendor/autoload.php');
 
 use prodigyview\media\Video;
 use prodigyview\util\FileManager;
@@ -9,17 +9,22 @@ use PhpAmqpLib\Connection\AMQPStreamConnection;
 $connection = new AMQPStreamConnection('172.18.0.2', 5672, 'guest', 'guest');
 $channel = $connection->channel();
 
-$channel->queue_declare('video_queue', 	//$queue - Either sets the queue or creates it if not exist
-						false,			//$passive - Do not modify the servers state
-						true,			//$durable - Data will persist if crash or restart occurs
-						false,			//$exclusive - Only one connection will usee, and deleted when closed
-						false			//$auto_delete - Queue is deleted when consumer is no longer subscribes
-						);
+$channel->queue_declare(
+	'video_queue',
+	//$queue - Either sets the queue or creates it if not exist
+	false,
+	//$passive - Do not modify the servers state
+	true,
+	//$durable - Data will persist if crash or restart occurs
+	false,
+	//$exclusive - Only one connection will usee, and deleted when closed
+	false //$auto_delete - Queue is deleted when consumer is no longer subscribes
+);
 
 /**
  * Define the callback function
  */
-$callback = function($msg) {
+$callback = function ($msg) {
 	//Convert the data to array
 	$data = json_decode($msg->body, true);
 

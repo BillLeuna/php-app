@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "16ba7c1da7f728bce68c5eec8de6b0ac",
+    "content-hash": "939252b5abd5d3f3cf30186808c42cc8",
     "packages": [
         {
             "name": "paragonie/constant_time_encoding",
@@ -316,16 +316,16 @@
         },
         {
             "name": "prodigyview/prodigyview",
-            "version": "0.9.99",
+            "version": "1.0.01",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ProdigyView-Toolkit/prodigyview.git",
-                "reference": "053cd02f168f3732d694de62ed763ff5b01be314"
+                "reference": "c81d1308c3efa05a70a89eee3fafcfeb78d5fdd4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ProdigyView-Toolkit/prodigyview/zipball/053cd02f168f3732d694de62ed763ff5b01be314",
-                "reference": "053cd02f168f3732d694de62ed763ff5b01be314",
+                "url": "https://api.github.com/repos/ProdigyView-Toolkit/prodigyview/zipball/c81d1308c3efa05a70a89eee3fafcfeb78d5fdd4",
+                "reference": "c81d1308c3efa05a70a89eee3fafcfeb78d5fdd4",
                 "shasum": ""
             },
             "require": {
@@ -360,9 +360,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ProdigyView-Toolkit/prodigyview/issues",
-                "source": "https://github.com/ProdigyView-Toolkit/prodigyview/tree/0.9.99"
+                "source": "https://github.com/ProdigyView-Toolkit/prodigyview/tree/1.0.01"
             },
-            "time": "2022-10-02T23:13:52+00:00"
+            "time": "2022-10-08T01:56:19+00:00"
         }
     ],
     "packages-dev": [],
